@@ -27,7 +27,7 @@ pipeline {
                     bat 'npm install'
                     bat 'npm run build'
                     // Build the Docker image for React
-                    bat 'docker build -t ${REACT_IMAGE} .'
+                    bat "docker build -t ${REACT_IMAGE} ."
                 }
             }
         }
@@ -38,7 +38,7 @@ pipeline {
                     // Clean and package the Spring Boot application
                     bat 'mvn clean package'
                     // Build the Docker image for Spring Boot
-                    bat 'docker build -t ${SPRING_IMAGE} .'
+                    bat "docker build -t ${SPRING_IMAGE} ."
                 }
             }
         }
