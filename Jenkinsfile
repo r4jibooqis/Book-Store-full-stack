@@ -14,7 +14,7 @@ pipeline {
         stage('Source Code Checkout') {
             steps {
                 // Checkout the source code from the repository
-                git url: "https://github.com/r4jibooqis/Book-Store.git", credentialsId: "git-credentials"
+                git url: "https://github.com/r4jibooqis/Book-Store-full-stack.git", credentialsId: "git-credentials"
             }
         }
         
