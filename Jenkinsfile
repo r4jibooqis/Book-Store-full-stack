@@ -10,19 +10,11 @@ pipeline {
         SPRING_PORT = '8080' // Port for Spring Boot app
     }
 
-    stages {
-        stage('Source Code Checkout') {
-            steps {
-                // Checkout the source code from the repository
-                git url: "https://github.com/r4jibooqis/Book-Store-full-stack.git", credentialsId: "git-credentials"
-            }
-        }
-        
+    stages {        
         stage('List Frontend Directory') {
             steps {
                     dir('frontend') {
                     bat 'dir' // For Windows
-                    // sh 'ls' // For Unix-based systems
                 }
             }
         }
