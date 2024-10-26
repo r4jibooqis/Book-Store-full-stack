@@ -1,0 +1,116 @@
+.admin-panel {
+    padding: 20px;
+    background-color: #f8f9fa;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    width: 600px;
+}
+
+.add-book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+}
+
+.add-book-form input {
+    padding: 10px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+}
+
+.add-book-form button {
+    background-color: #007bff;
+
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+}
+
+.add-book-form button:hover {
+    background-color: #0056b3;
+
+}
+
+.book-list {
+    list-style-type: none;
+
+    padding: 0;
+
+}
+
+.book-item {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+    background-color: white;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    padding: 10px 20px;
+
+    margin-bottom: 10px;
+
+}
+
+.remove-button {
+    background-color: #dc3545;
+
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 10px 10px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+}
+
+.remove-button:hover {
+    background-color: #c82333;
+
+}
+
+.edit-button {
+    background-color: #258f33;
+
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    padding: 10px 10px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+    margin: 15px;
+}
+
+.edit-button:hover {
+    background-color: #115f11;
+
+}
