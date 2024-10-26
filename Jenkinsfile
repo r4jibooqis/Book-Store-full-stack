@@ -10,15 +10,7 @@ pipeline {
         SPRING_PORT = '8080' // Port for Spring Boot app
     }
 
-    stages {        
-        stage('List Frontend Directory') {
-            steps {
-                    dir('frontend') {
-                    bat 'dir' // For Windows
-                }
-            }
-        }
-
+    stages {   
 
         stage('Build Frontend (React App)') {
             steps {
