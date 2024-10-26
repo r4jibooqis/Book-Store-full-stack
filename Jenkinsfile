@@ -54,7 +54,7 @@ pipeline {
                     bat "docker run -d --name ${SPRING_CONTAINER_NAME} -p ${SPRING_PORT}:8080 ${SPRING_IMAGE}"
 
                     bat "docker rm -f ${REACT_CONTAINER_NAME} || exit 0"
-                    bat "docker run -d --name ${REACT_CONTAINER_NAME} -p ${REACT_PORT}:3000 ${REACT_IMAGE}"
+                    bat "docker run -d --name ${REACT_CONTAINER_NAME} -p ${REACT_PORT}:80 ${REACT_IMAGE}"
                 }
             }
         }
