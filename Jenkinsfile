@@ -17,6 +17,16 @@ pipeline {
                 git url: "https://github.com/r4jibooqis/Book-Store.git", credentialsId: "git-credentials"
             }
         }
+        
+        stage('List Frontend Directory') {
+            steps {
+                    dir('frontend') {
+                    bat 'dir' // For Windows
+                    // sh 'ls' // For Unix-based systems
+                }
+            }
+        }
+
 
         stage('Build Frontend (React App)') {
             steps {
