@@ -44,6 +44,14 @@ pipeline {
             }
         }
 
+        stage('Package') {
+            dir('backend') {
+                steps {
+                    bat 'mvn package'
+                }
+            }
+        }
+
         stage('Deploy Locally with Docker') {
             when {
                 expression { currentBuild.currentResult == 'SUCCESS' }
