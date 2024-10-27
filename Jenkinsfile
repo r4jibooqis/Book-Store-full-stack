@@ -86,6 +86,6 @@ def sendEmailNotification(String subject, String body) {
     emailext(
         subject: subject,
         body: body,
-        to: 'raji.makkah@gmail.com'
+        to: 'maher.makkah7@gmail.com'
     )
 }
