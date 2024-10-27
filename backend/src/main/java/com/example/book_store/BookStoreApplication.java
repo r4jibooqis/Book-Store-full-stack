@@ -20,11 +20,11 @@ public class BookStoreApplication {
 		return new WebMvcConfigurer() {
 			@Override
 			public void addCorsMappings(CorsRegistry registry) {
-				registry.addMapping("/api/**")
-						.allowedOrigins("http://localhost:*")
+				registry.addMapping("/**")
+						.allowedOrigins("*") // Allow all origins for development
 						.allowedMethods("GET", "POST", "PUT", "DELETE")
 						.allowedHeaders("*")
-						.allowCredentials(true);
+						.allowCredentials(true); // Enable credentials if necessary
 			}
 		};
 	}
