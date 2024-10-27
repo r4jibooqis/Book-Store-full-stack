@@ -45,8 +45,8 @@ pipeline {
         }
 
         stage('Package') {
-            dir('backend') {
-                steps {
+            steps {
+                dir('backend') {
                     bat 'mvn package'
                 }
             }
