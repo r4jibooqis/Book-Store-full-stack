@@ -15,7 +15,6 @@ public class Book {
     private double price;
     private String imgUrl;
 
-    // Default constructor
     public Book() {
     }
 
@@ -26,7 +25,6 @@ public class Book {
         this.imgUrl = imgUrl;
     }
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }

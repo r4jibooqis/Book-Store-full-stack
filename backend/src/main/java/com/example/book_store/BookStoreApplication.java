@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-@EntityScan(basePackages = "com.example.book_store.model") // Adjust to match your actual package
+@EntityScan(basePackages = "com.example.book_store.model")
 public class BookStoreApplication {
 
 	public static void main(String[] args) {
